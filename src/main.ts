@@ -25,13 +25,37 @@ CloseIcon?.addEventListener('click',()=>{
 Links?.addEventListener('click',()=>{
     CloseMenu()
 })
-if(window.location.pathname === '/about'){
-    About?.classList.add('opacity-70') 
-}
-if(window.location.pathname === '/contact'){
-    Contact?.classList.add('opacity-70') 
- 
-}
-if(window.location.pathname === '/'){
+var state = 'root' 
+About?.addEventListener('click',()=>{
+    state = 'about'
+    if(state === 'about'){
+        About?.classList.add('opacity-70')
+        Contact?.classList.remove('opacity-70') 
+        Portfolio?.classList.remove('opacity-70') 
+    }
+})
+Portfolio?.addEventListener('click',()=>{
+    state = 'root'
+    if(state === 'root'){
+        About?.classList.remove('opacity-70')
+        Contact?.classList.remove('opacity-70') 
+        Portfolio?.classList.add('opacity-70') 
+    }
+})
+Contact?.addEventListener('click',()=>{
+    state = 'contact'
+    if(state === 'contact'){
+        About?.classList.remove('opacity-70')
+        Contact?.classList.add('opacity-70') 
+        Portfolio?.classList.remove('opacity-70') 
+    } 
+})
+if(state === 'root'){
     Portfolio?.classList.add('opacity-70') 
+}
+if(state === 'contact'){
+    Contact?.classList.add('opacity-70') 
+}
+if(state === 'about'){
+    About?.classList.add('opacity-70') 
 }
