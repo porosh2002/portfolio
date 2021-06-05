@@ -29,6 +29,9 @@ if(window.location.pathname === '/about'){
     About?.classList.add('opacity-70') 
 }
 if(window.location.pathname === '/contact'){
-
-    Contact?.classList.add('bg-gray-400') 
+    Contact?.classList.add('opacity-70') 
+ 
+}
+if(window.location.pathname === '/'){
+    Portfolio?.classList.add('opacity-70') 
 }
