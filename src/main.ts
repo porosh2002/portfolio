@@ -23,7 +23,7 @@ CloseIcon?.addEventListener('click',()=>{
     CloseMenu()
 })
 Links?.addEventListener('click',()=>{
-    CloseMenu()
+    CloseMenu()  
 })
 var state = 'root' 
 About?.addEventListener('click',()=>{
@@ -53,9 +53,4 @@ Contact?.addEventListener('click',()=>{
 if(state === 'root'){
     Portfolio?.classList.add('opacity-70') 
 }
-if(state === 'contact'){
-    Contact?.classList.add('opacity-70') 
-}
-if(state === 'about'){
-    About?.classList.add('opacity-70') 
-}
+
