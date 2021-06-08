@@ -9,9 +9,6 @@ module.exports = {
     extend: {
       colors: {
           modalBG:'#343a4091',
-          whatsApp:'rgb(0,230,118)',
-          telegram:'rgb(38,165,228)',
-          skype:'#00AFF0'
       }
     },
   },

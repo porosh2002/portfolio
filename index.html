@@ -3,44 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/style.css" />
     <title>Porosh</title>
   </head>
   <body>
     <!-- Navigation -->
-    <div class="sticky inset-0 text-white h-24 bg-blue-400 lg:flex lg:justify-between lg:items-center lg:px-12 px-4">
+    <div
+      class="
+        sticky
+        inset-0
+        text-white
+        h-24
+        bg-blue-400
+        lg:flex
+        lg:justify-between
+        lg:items-center
+        lg:px-12
+        px-4
+      "
+    >
       <div class="flex h-full justify-between items-center">
         <a href="/" class="text-4xl">Porosh</a>
-        <svg id="CloseIcon" class="hidden w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-        <svg id="OpenIcon" class="lg:hidden w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        <svg
+          id="CloseIcon"
+          class="hidden w-8 h-8"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        <svg
+          id="OpenIcon"
+          class="lg:hidden w-8 h-8"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
       </div>
-      <div id="LinksContainer" class="hidden lg:block mt-2 lg:mt-0 rounded lg:rounded-none py-4 lg:py-0 bg-gray-700 lg:bg-transparent text-lg uppercase">
+      <div
+        id="LinksContainer"
+        class="
+          hidden
+          lg:block
+          mt-2
+          lg:mt-0
+          rounded
+          lg:rounded-none
+          py-4
+          lg:py-0
+          bg-gray-700
+          lg:bg-transparent
+          text-lg
+          uppercase
+        "
+      >
         <div id="Links">
-          <p id="Portfolio" class="cursor-pointer hover:opacity-70 block lg:inline mx-4 my-4 lg:my-0">Portfolio</p>
-          <p id="About" class="cursor-pointer hover:opacity-70 block lg:inline mx-4 my-4 lg:my-0">About me</p>
-          <p id="Contact" class="cursor-pointer hover:text-gray-400 block lg:inline mx-4 my-4 lg:my-0 lg:py-4 lg:px-8 lg:bg-white lg:text-gray-600 lg:rounded">Contact me</p>
+          <p
+            id="Portfolio"
+            class="
+              cursor-pointer
+              hover:opacity-70
+              block
+              lg:inline
+              mx-4
+              my-4
+              lg:my-0
+            "
+          >
+            Portfolio
+          </p>
+          <p
+            id="About"
+            class="
+              cursor-pointer
+              hover:opacity-70
+              block
+              lg:inline
+              mx-4
+              my-4
+              lg:my-0
+            "
+          >
+            About me
+          </p>
+          <p
+            id="Contact"
+            class="
+              cursor-pointer
+              hover:text-gray-400
+              block
+              lg:inline
+              mx-4
+              my-4
+              lg:my-0
+              lg:py-4
+              lg:px-8
+              lg:bg-white
+              lg:text-gray-600
+              lg:rounded
+            "
+          >
+            Contact me
+          </p>
         </div>
       </div>
     </div>
     <!-- Contact us -->
-    <div class="inset-0 h-screen w-screen bg-modalBG absolute">
-      <div class="flex items-center justify-center w-full w-3/4 h-full">
-        <div class="bg-white rounded w-3/4 h-3/5">
-          <img src="./Assets/porosh.png" alt="porosh" class="h-24 block mx-auto mt-12" />
-          <div class="flex items-center text-xl justify-center mt-8 mb-12"><p class="italic mt-1 mr-2 text-gray-700">MD  Jamil Kashem Porosh</p>
-            <svg class="w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+    <div class="transform -translate-y-full	 inset-0 h-screen w-screen bg-modalBG absolute">
+      <div class="flex items-center justify-center w-full h-full">
+        <div class="lg:px-8 px-4 bg-white pb-12 rounded w-full mx-2 lg:mx-0 lg:w-2/4 text-gray-700 text-lg">
+          
+          <div class="flex justify-end pb-12 pt-8 cursor-pointer ">
+            <svg class="hover:text-blue-400 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
           </div>
-            <div class="px-12 py-12 text-lg ">
-                <div class="flex items-center ">
-                  <svg class="w-6 h-6 mr-2 text-gray-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  <div class="flex items-center italic py-2 px-8  text-white rounded bg-gray-700">
 
-                    <p class=" w-80">jamilkashem@zoho.com</p>
-                    <svg class="w-6 h-6  mx-2 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7 9a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9z"></path><path d="M5 3a2 2 0 00-2 2v6a2 2 0 002 2V5h8a2 2 0 00-2-2H5z"></path></svg>
-                  </div>
-                </div>
-           </div>
+        <div class="mt-4"><span class="text-blue-400 italic mr-2">Email :</span> Jamilkashem@zoho.com</div>
+        <div class="mt-4"><span class="text-blue-400 italic mr-2">Skype :</span> live:.cid.283bf096d3e0edd4</div>
+        <div class="mt-4"><span class="text-blue-400 italic mr-2">WhatsApp
+          :</span>(+880)1861481110</div>
+        <div class="mt-4"><span class="text-blue-400 italic mr-2">Telegram
+          :</span>@porosh_2002
+          <a href="https://t.me/porosh_2002" class="text-blue-400 mx-2 fas fa-external-link-alt"></a>
+        </div>
         </div>
       </div>
     </div>
