@@ -5,6 +5,8 @@ const Links = document.getElementById('Links')
 const About = document.getElementById('About')
 const Portfolio = document.getElementById('Portfolio')
 const Contact = document.getElementById('Contact')
+const ContactPage = document.getElementById('ContactPage')
+const ContactTimes = document.getElementById('ContactTimes')
 OpenIcon?.addEventListener('click',()=>{
     CloseIcon?.classList.remove('hidden')
     OpenIcon?.classList.add('hidden')
@@ -48,7 +50,18 @@ Contact?.addEventListener('click',()=>{
         About?.classList.remove('opacity-70')
         Contact?.classList.add('opacity-70') 
         Portfolio?.classList.remove('opacity-70') 
-    } 
+    }
+    ContactPage?.classList.remove('-translate-y-full')
+})
+ContactTimes?.addEventListener('click',()=>{
+ 
+    ContactPage?.classList.add('-translate-y-full')
+    state = 'root'
+    if(state === 'root'){
+        About?.classList.remove('opacity-70')
+        Contact?.classList.remove('opacity-70') 
+        Portfolio?.classList.add('opacity-70') 
+    }
 })
 if(state === 'root'){
     Portfolio?.classList.add('opacity-70') 
