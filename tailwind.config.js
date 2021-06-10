@@ -9,7 +9,10 @@ module.exports = {
     extend: {
       colors: {
           modalBG:'#343a4091',
-      }
+      },
+      backgroundImage: theme => ({
+        'flowers-pattern': "url('/Assets/flowers.png')",
+       })
     },
   },
   variants: {

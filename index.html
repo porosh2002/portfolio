@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css" />
-    <title>Porosh</title>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <div
-      class="
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css" />
+  <title>Porosh</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div class="
         sticky
         inset-0
         text-white
@@ -25,40 +23,23 @@
         lg:items-center
         lg:px-12
         px-4
-      "
-    >
-      <div class="flex h-full justify-between items-center">
-        <a href="/" class="text-4xl">Porosh</a>
-        <svg
-          id="CloseIcon"
-          class="hidden w-8 h-8"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-        <svg
-          id="OpenIcon"
-          class="lg:hidden w-8 h-8"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </div>
-      <div
-        id="LinksContainer"
-        class="
+      ">
+    <div class="flex h-full justify-between items-center">
+      <a href="/" class="text-4xl">Porosh</a>
+      <svg id="CloseIcon" class="hidden w-8 h-8" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <svg id="OpenIcon" class="lg:hidden w-8 h-8" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </div>
+    <div id="LinksContainer" class="
           hidden
           lg:block
           mt-2
@@ -71,12 +52,9 @@
           lg:bg-transparent
           text-lg
           uppercase
-        "
-      >
-        <div id="Links">
-          <p
-            id="Portfolio"
-            class="
+        ">
+      <div id="Links">
+        <p id="Portfolio" class="
               cursor-pointer
               hover:opacity-70
               block
@@ -84,13 +62,10 @@
               mx-4
               my-4
               lg:my-0
-            "
-          >
-            Portfolio
-          </p>
-          <p
-            id="About"
-            class="
+            ">
+          Portfolio
+        </p>
+        <p id="About" class="
               cursor-pointer
               hover:opacity-70
               block
@@ -98,13 +73,10 @@
               mx-4
               my-4
               lg:my-0
-            "
-          >
-            About me
-          </p>
-          <p
-            id="Contact"
-            class="
+            ">
+          About me
+        </p>
+        <p id="Contact" class="
               cursor-pointer
               hover:text-gray-400
               block
@@ -117,76 +89,117 @@
               lg:bg-white
               lg:text-gray-600
               lg:rounded
-            "
-          >
-            Contact me
-          </p>
-        </div>
+            ">
+          Contact me
+        </p>
       </div>
     </div>
-    <!-- Contact us -->
-    <div id="ContactPage" class="transform -translate-y-full inset-0 h-screen w-screen bg-modalBG absolute">
-      <div class="flex items-center justify-center w-full h-full">
-        <div class="lg:px-8 px-4 bg-white pb-12  rounded w-full mx-2 lg:mx-0 lg:w-2/4 text-white text-lg lg:text-xl">
-          
-          <div class="flex justify-between py-12 text-gray-700 ">
-            <div class="italic flex items-center uppercase text-blue-400 text-base">
-              <svg class="w-6 h-6 mr-1 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"></path></svg>
-              <p class="mt-1 text-gray-700">Contact Address</p>
-            </div>
-            <svg id="ContactTimes" class=" cursor-pointer  hover:text-blue-400 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </div>
+  </div>
+  <!-- Contact us -->
+  <div id="ContactPage" class="transform -translate-y-full inset-0 h-screen w-screen bg-modalBG absolute">
+    <div class="flex items-center justify-center w-full h-full">
+      <div class="lg:px-8 px-4 bg-white pb-12  rounded w-full mx-2 lg:mx-0 lg:w-2/4 text-white text-lg lg:text-xl">
 
-        <div class="mt-4 bg-gray-700 py-4 px-4 rounded hover:bg-gray-600 transition-all"><span class="text-blue-400 italic mr-2">Email :</span> Jamilkashem@zoho.com</div>
-        <div class="mt-4 bg-gray-700 py-4 px-4 rounded hover:bg-gray-600 transition-all"><span class="text-blue-400 italic mr-2">Skype :</span> live:.cid.283bf096d3e0edd4</div>
-        <div class="mt-4 bg-gray-700 py-4 px-4 rounded hover:bg-gray-600 transition-all"><span class="text-blue-400 italic mr-2">WhatsApp
-          :</span>(+880)1861481110</div>
-        <div class="mt-4 bg-gray-700 py-4 px-4 rounded hover:bg-gray-600 transition-all"><span class="text-blue-400 italic mr-2">Telegram
-          :</span>@porosh_2002
+        <div class="flex justify-between py-12 text-gray-700 ">
+          <div class="italic flex items-center uppercase text-blue-400 text-base">
+            <svg class="w-6 h-6 mr-1 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z">
+              </path>
+            </svg>
+            <p class="mt-1 text-gray-700">Contact Address</p>
+          </div>
+          <svg id="ContactTimes" class=" cursor-pointer  hover:text-blue-400 w-6 h-6" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+
+        <div class="mt-4 bg-gray-700 py-4 px-4 rounded hover:bg-gray-600 transition-all"><span
+            class="text-blue-400 italic mr-2">Email :</span> Jamilkashem@zoho.com</div>
+        <div class="mt-4 bg-gray-700 py-4 px-4 rounded hover:bg-gray-600 transition-all"><span
+            class="text-blue-400 italic mr-2">Skype :</span> live:.cid.283bf096d3e0edd4</div>
+        <div class="mt-4 bg-gray-700 py-4 px-4 rounded hover:bg-gray-600 transition-all"><span
+            class="text-blue-400 italic mr-2">WhatsApp
+            :</span>(+880)1861481110</div>
+        <div class="mt-4 bg-gray-700 py-4 px-4 rounded hover:bg-gray-600 transition-all"><span
+            class="text-blue-400 italic mr-2">Telegram
+            :</span>@porosh_2002
           <a href="https://t.me/porosh_2002" class="text-blue-400 mx-2 fas fa-external-link-alt"></a>
         </div>
         <div class="flex items-center justify-center text-gray-700 text-center mt-12 italic animate-bounce">
           <p class="mt-1">You are smart </p>
-          <svg class="ml-1 w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+          <svg class="ml-1 w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+              clip-rule="evenodd"></path>
+          </svg>
 
-        </div>
         </div>
       </div>
     </div>
-    <!-- About us -->
-    <div id="AboutPage" class="inset-0 h-screen w-screen bg-modalBG absolute">
-      <div class="flex items-center justify-center w-full h-full">
-        <div class="lg:px-8 px-4 bg-white pb-12  rounded w-full mx-2 lg:mx-0 lg:w-2/4 text-white text-lg lg:text-xl">
-          
-          <div class="flex justify-between py-12 text-gray-700 ">
-            <div class="italic flex items-center uppercase text-blue-400 text-base">
-              <svg class="w-6 h-6 mr-1 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"></path></svg>
-              <p class="mt-1 text-gray-700">About me</p>
+  </div>
+  <!-- About us -->
+  <div id="AboutPage" class="inset-0 h-screen w-screen bg-modalBG absolute">
+    <div class="flex items-center justify-center w-full h-full">
+      <div class="lg:px-8 px-4 bg-white pb-12 rounded w-full mx-2 lg:mx-0 lg:w-2/4  text-lg lg:text-xl">
+
+        <div class="flex justify-between py-12 ">
+          <div class="flex items-center uppercase text-blue-400 text-base">
+            <svg class="w-6 h-6 mr-1 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z">
+              </path>
+            </svg>
+            <p class="mt-1 text-gray-700 ">About me</p>
+          </div>
+          <svg id="AboutTimes" class=" cursor-pointer text-gray-700  hover:text-blue-400 w-6 h-6" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+          <div class="py-8 px-4 bg-gray-700 rounded ">
+            <div class="mt-4">
+              <span class="text-blue-400 text-base tracking-wider mr-2">Name:</span>
+              <span class="text-white text-lg italic tracking-wider">MD Jamil Kashem Porosh</span>
+              <svg class="inline text-blue-400 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
             </div>
-            <svg id="ContactTimes" class=" cursor-pointer  hover:text-blue-400 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            <div class="mt-4">
+              <span class="text-blue-400 text-base tracking-wider mr-2">Positing:</span>
+              <span class="text-white text-lg italic tracking-wider">Full stack web developer <span class="text-2xl text-blue-400">&</span> Blockchain developer
+              </span>
+            </div>
+            <div class="mt-4">
+              <span class="text-blue-400 text-base tracking-wider mr-2">Design technologies: </span>
+              <span class="text-green-300 text-lg italic tracking-wider">HTML, CSS, SASS, Javascript, TypeScript, EJS, <span class="text-gray-400">etc</span>
+              </span>
+            </div>
+            <div class="mt-4">
+              <span class="text-blue-400 text-base tracking-wider mr-2">Design framework & library: </span>
+              <span class="text-green-300 text-lg italic tracking-wider">React JS, Next JS, Tailwind CSS, Styled-components, Jest, <span class="text-gray-400">etc</span>
+              </span>
+            </div>
+            <div class="mt-4">
+              <span class="text-blue-400 text-base tracking-wider mr-2">Development technologies: </span>
+              <span class="text-yellow-200 text-lg italic tracking-wider">Node JS, Express JS, <span class="text-gray-400">etc</span>
+              </span>
+            </div>
+            <div class="mt-4">
+              <span class="text-blue-400 text-base tracking-wider mr-2">Database: </span>
+              <span class="text-yellow-200 text-lg italic tracking-wider">Mongo DB, CouchDB, Redis, <span class="text-gray-400">etc</span>
+              </span>
+            </div>
           </div>
-
-        <div class="mt-4 bg-gray-700 py-4 px-4 rounded hover:bg-gray-600 transition-all"><span class="text-blue-400 italic mr-2">Name :</span> MD Jamil Kashem Porosh</div>
-        <div class="mt-4 bg-gray-700 py-4 px-4 rounded hover:bg-gray-600 transition-all"><span class="text-blue-400 italic mr-2">Role
-          :</span>Full stack web developer & Blockchain developer</div>
-          <div class="mt-4 bg-gray-700 flex items-center py-4 px-4 rounded hover:bg-gray-600 transition-all"><span class="text-blue-400 italic mr-2">Language
-            :</span>Javascript
-            <i class="text-yellow-300 text-2xl mx-2 fab fa-js"></i>
-            , TypeScript
-            <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1.5rem" height="1.5rem" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="#007ACC" d="M0 128v128h256V0H0z"/><path d="M56.611 128.85l-.081 10.483h33.32v94.68H113.42v-94.68h33.32v-10.28c0-5.69-.122-10.444-.284-10.566c-.122-.162-20.399-.244-44.983-.203l-44.739.122l-.122 10.443z" fill="#FFF"/><path d="M206.567 118.108c6.501 1.626 11.459 4.51 16.01 9.224c2.357 2.52 5.851 7.112 6.136 8.209c.08.325-11.053 7.802-17.798 11.987c-.244.163-1.22-.894-2.317-2.52c-3.291-4.794-6.745-6.867-12.028-7.232c-7.76-.529-12.759 3.535-12.718 10.32c0 1.992.284 3.17 1.097 4.796c1.707 3.535 4.876 5.648 14.832 9.955c18.326 7.884 26.168 13.085 31.045 20.48c5.445 8.25 6.664 21.415 2.966 31.208c-4.063 10.646-14.14 17.88-28.323 20.277c-4.388.772-14.79.65-19.504-.203c-10.28-1.829-20.033-6.908-26.047-13.572c-2.357-2.601-6.949-9.387-6.664-9.875c.122-.162 1.178-.812 2.356-1.503c1.138-.65 5.446-3.13 9.509-5.486l7.355-4.267l1.544 2.276c2.154 3.291 6.867 7.802 9.712 9.305c8.167 4.308 19.383 3.698 24.909-1.26c2.357-2.153 3.332-4.388 3.332-7.68c0-2.966-.366-4.266-1.91-6.5c-1.99-2.845-6.054-5.243-17.595-10.24c-13.206-5.69-18.895-9.225-24.096-14.833c-3.007-3.25-5.852-8.452-7.03-12.8c-.975-3.616-1.22-12.678-.447-16.335c2.723-12.76 12.353-21.658 26.25-24.3c4.51-.853 14.994-.528 19.424.57z" fill="#FFF"/></svg>
-            , JSX <i class="text-blue-400 fab text-2xl mx-2 fa-react"></i>
-            , CSS <i class="fab text-2xl mx-2 text-blue-400 fa-css3-alt"></i>
-            , Sass <i class="fab text-2xl mx-2 fa-sass"></i>
-          </div>
-          <div class="mt-4 bg-gray-700 py-4 px-4 rounded hover:bg-gray-600 transition-all"><span class="text-blue-400 italic mr-2">Country :</span> Bangladesh</div>
-        <div class="flex items-center justify-center text-gray-700 text-center mt-12 italic animate-bounce">
-          <p class="mt-1">You are smart </p>
-          <svg class="ml-1 w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
-
-        </div>
-        </div>
       </div>
     </div>
-  </body>
-  <script type="module" src="/src/main.ts"></script>
+  </div>
+
+</body>
+<script type="module" src="/src/main.ts"></script>
+
 </html>
