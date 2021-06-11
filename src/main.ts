@@ -7,6 +7,9 @@ const Portfolio = document.getElementById('Portfolio')
 const Contact = document.getElementById('Contact')
 const ContactPage = document.getElementById('ContactPage')
 const ContactTimes = document.getElementById('ContactTimes')
+const ExpDays = document.getElementById('ExpDays') !
+import moment from 'moment'
+const EXP = document.getElementById('Exp')!
 OpenIcon?.addEventListener('click',()=>{
     CloseIcon?.classList.remove('hidden')
     OpenIcon?.classList.add('hidden')
@@ -66,4 +69,23 @@ ContactTimes?.addEventListener('click',()=>{
 if(state === 'root'){
     Portfolio?.classList.add('opacity-70') 
 }
+const EXPvalue = moment("20180301", "YYYYMMDD").fromNow(true);
+const d = new Date().getMonth();
+var Extramonth = 0;
+if((d+1)-3 === -2){
+    Extramonth = 10
+}
+else if((d+1)-3 === -1){
+    Extramonth = 11
+}
+else{
+    Extramonth = (d+1) - 3
+}
+const Days = moment().format("Do").replace('th','')
+EXP.textContent = `${EXPvalue}  ${Extramonth} months`
+
+ExpDays.textContent = `${Days} days`
+
+
+
 
