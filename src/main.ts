@@ -8,6 +8,8 @@ const Contact = document.getElementById('Contact')
 const ContactPage = document.getElementById('ContactPage')
 const ContactTimes = document.getElementById('ContactTimes')
 const ExpDays = document.getElementById('ExpDays') !
+const AboutPageDev = document.getElementById('AboutPageDev')
+const DevTimes = document.getElementById('AboutTimes')
 import moment from 'moment'
 const EXP = document.getElementById('Exp')!
 OpenIcon?.addEventListener('click',()=>{
@@ -59,6 +61,24 @@ Contact?.addEventListener('click',()=>{
 ContactTimes?.addEventListener('click',()=>{
  
     ContactPage?.classList.add('-translate-y-full')
+    state = 'root'
+    if(state === 'root'){
+        About?.classList.remove('opacity-70')
+        Contact?.classList.remove('opacity-70') 
+        Portfolio?.classList.add('opacity-70') 
+    }
+})
+About?.addEventListener('click',()=>{
+    state = 'about'
+    if(state === 'about'){
+        About?.classList.add('opacity-70')
+        Contact?.classList.remove('opacity-70') 
+        Portfolio?.classList.remove('opacity-70') 
+    }
+    AboutPageDev?.classList.remove('-translate-y-full')
+})
+DevTimes?.addEventListener('click',()=>{
+    AboutPageDev?.classList.add('-translate-y-full')
     state = 'root'
     if(state === 'root'){
         About?.classList.remove('opacity-70')
