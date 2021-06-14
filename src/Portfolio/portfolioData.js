@@ -5,7 +5,8 @@ export const Data = [
     Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
-    Type:"Website"
+    Type:"Website",
+    Pattern:"flowers-pattern"
 },
 {
     Name:'Company2',
@@ -13,6 +14,43 @@ export const Data = [
     Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
-    Type:"Website"
-}
+    Type:"web app",
+    Pattern:"crissxcross"
+},
+{
+    Name:'Company3',
+    Delivery:'Code',
+    Live:'https://www.google.com',
+    Image:'https://www.google.com',
+    SourceCode:'https://www.google.com',
+    Type:"Website",
+    Pattern:"light-wool"
+},
+{
+    Name:'Company4',
+    Delivery:'Code',
+    Live:'https://www.google.com',
+    Image:'https://www.google.com',
+    SourceCode:'https://www.google.com',
+    Type:"Website",
+    Pattern:"low-contrast-linen"
+},
+{
+    Name:'Company4',
+    Delivery:'Code',
+    Live:'https://www.google.com',
+    Image:'https://www.google.com',
+    SourceCode:'https://www.google.com',
+    Type:"Website",
+    Pattern:"skulls"
+},
+{
+    Name:'Company4',
+    Delivery:'Code',
+    Live:'https://www.google.com',
+    Image:'https://www.google.com',
+    SourceCode:'https://www.google.com',
+    Type:"Website",
+    Pattern:"sos"
+},
 ]
