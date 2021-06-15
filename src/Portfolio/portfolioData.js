@@ -1,7 +1,7 @@
 export const Data = [
 {
-    Name:'Technoloy company',
-    Delivery:'Code',
+    Name:'Technoloy',
+    Delivery:['DESIGN',' & ','CODE'],
     Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
@@ -9,8 +9,8 @@ export const Data = [
     Pattern:"flowers-pattern"
 },
 {
-    Name:'Company2',
-    Delivery:'Code',
+    Name:'Face detection',
+    Delivery:['DESIGN',' & ','CODE'],
     Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
@@ -19,7 +19,7 @@ export const Data = [
 },
 {
     Name:'Company3',
-    Delivery:'Code',
+    Delivery:['DESIGN',' & ','CODE'],
     Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
@@ -28,7 +28,7 @@ export const Data = [
 },
 {
     Name:'Company4',
-    Delivery:'Code',
+    Delivery:['DESIGN',' & ','CODE'],
     Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
@@ -37,7 +37,7 @@ export const Data = [
 },
 {
     Name:'Company4',
-    Delivery:'Code',
+    Delivery:['DESIGN',' & ','CODE'],
     Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
@@ -46,7 +46,7 @@ export const Data = [
 },
 {
     Name:'Company4',
-    Delivery:'Code',
+    Delivery:['DESIGN',' & ','CODE'],
     Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',

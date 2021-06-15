@@ -6,3 +6,6 @@
 body{
     font-family: 'Baloo Bhai 2', cursive;
 }
+.word-space-5{
+    word-spacing:5px;
+}
