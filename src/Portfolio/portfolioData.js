@@ -1,11 +1,10 @@
 export const Data = [
 {
-    Name:'Technoloy',
+    Name:'Youtube Clone',
     Delivery:['DESIGN',' & ','CODE'],
-    Live:'https://www.google.com',
+    Live:null,
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
-    Type:"Website",
     Pattern:"flowers-pattern"
 },
 {
@@ -14,7 +13,6 @@ export const Data = [
     Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
-    Type:"web app",
     Pattern:"crissxcross"
 },
 {
@@ -22,8 +20,7 @@ export const Data = [
     Delivery:['DESIGN',' & ','CODE'],
     Live:'https://www.google.com',
     Image:'https://www.google.com',
-    SourceCode:'https://www.google.com',
-    Type:"Website",
+    SourceCode:null,
     Pattern:"light-wool"
 },
 {
@@ -32,7 +29,6 @@ export const Data = [
     Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
-    Type:"Website",
     Pattern:"low-contrast-linen"
 },
 {
@@ -41,7 +37,6 @@ export const Data = [
     Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
-    Type:"Website",
     Pattern:"skulls"
 },
 {
@@ -50,7 +45,6 @@ export const Data = [
     Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
-    Type:"Website",
     Pattern:"sos"
 },
 ]
