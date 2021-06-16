@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-          modalBG:'#343a4091',
+          modalBG:'#343a40ed',
       },
       backgroundImage: theme => ({
         'flowers-pattern': "url('/Assets/flowers.png')",
