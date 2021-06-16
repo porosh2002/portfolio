@@ -13,12 +13,7 @@ module.exports = {
           modalBG:'#343a40ed',
       },
       backgroundImage: theme => ({
-        'flowers-pattern': "url('/Assets/flowers.png')",
-        'crissxcross': "url('/Assets/crissxcross.png')",
-        'light-wool': "url('/Assets/light-wool.png')",
-        'low-contrast-linen': "url('/Assets/low-contrast-linen.png')",
-        'skulls': "url('/Assets/skulls.png')",
-        'sos': "url('/Assets/sos.png')",
+        'FD': "url('/Assets/FD.png')",
        })
     },
   },

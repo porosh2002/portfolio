@@ -1,11 +1,11 @@
 export const Data = [
 {
-    Name:'Youtube Clone',
+    Name:'Face detection',
     Delivery:['DESIGN',' & ','CODE'],
-    Live:null,
+    Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
-    Pattern:"flowers-pattern"
+    Pattern:"fdporosh"
 },
 {
     Name:'Face detection',
@@ -13,38 +13,6 @@ export const Data = [
     Live:'https://www.google.com',
     Image:'https://www.google.com',
     SourceCode:'https://www.google.com',
-    Pattern:"crissxcross"
-},
-{
-    Name:'Company3',
-    Delivery:['DESIGN',' & ','CODE'],
-    Live:'https://www.google.com',
-    Image:'https://www.google.com',
-    SourceCode:null,
-    Pattern:"light-wool"
-},
-{
-    Name:'Company4',
-    Delivery:['DESIGN',' & ','CODE'],
-    Live:'https://www.google.com',
-    Image:'https://www.google.com',
-    SourceCode:'https://www.google.com',
-    Pattern:"low-contrast-linen"
-},
-{
-    Name:'Company4',
-    Delivery:['DESIGN',' & ','CODE'],
-    Live:'https://www.google.com',
-    Image:'https://www.google.com',
-    SourceCode:'https://www.google.com',
-    Pattern:"skulls"
-},
-{
-    Name:'Company4',
-    Delivery:['DESIGN',' & ','CODE'],
-    Live:'https://www.google.com',
-    Image:'https://www.google.com',
-    SourceCode:'https://www.google.com',
-    Pattern:"sos"
-},
+    Pattern:"fdporosh"
+}
 ]
