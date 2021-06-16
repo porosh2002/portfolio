@@ -9,3 +9,8 @@ body{
 .word-space-5{
     word-spacing:5px;
 }
+.card{
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.39);
+}
