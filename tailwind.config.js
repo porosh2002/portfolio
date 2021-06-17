@@ -11,10 +11,7 @@ module.exports = {
     extend: {
       colors: {
           modalBG:'#343a40ed',
-      },
-      backgroundImage: theme => ({
-        'FD': "url('/Assets/FD.png')",
-       })
+      }
     },
   },
   variants: {

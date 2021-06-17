@@ -14,3 +14,12 @@ body{
     -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.39);
     -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.39);
 }
+.bg-LO{
+    background: url(../Assets/LO.png);
+}
+.bg-FD{
+    background: url(../Assets/FD.png);
+}
+.bg-YC{
+    background: url(../Assets/YC.png);
+}

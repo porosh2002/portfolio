@@ -1,5 +1,5 @@
 export default function Card({ data }) {
-  const { Name, Delivery, Live, Image, SourceCode, Type, Pattern } = data;
+  const { Name, Delivery, Live, Image, SourceCode, Type, BG } = data;
   var LiveURL = true;
   var PublicCode = true;
   if (Live === null) {
@@ -12,9 +12,12 @@ export default function Card({ data }) {
   var DisableCode = PublicCode ? null : "opacity-20 cursor-not-allowed";
   return (
     <div className="mx-4 my-4 h-72 w-72 inline-block card">
-      <div className={`h-60 bg-center bg-cover bg-FD`}></div>
-      <div className="text-gray-700 flex h-12 items-center justify-end bg-blue-400">
-        <a target="self" href={SourceCode} className={`${DisableCode} mx-2`}>
+      <div className={`h-60 bg-center bg-cover bg-${BG}`}>
+      </div>
+      <div className="text-gray-700 flex h-12 items-center justify-between bg-gradient-to-r from-blue-500 to-blue-400">
+<p className='mx-2 uppercase word-space-5 text-white'>{Name}</p>
+<div className='flex'>
+<a target="self" href={SourceCode} className={`${DisableCode} mx-2`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -55,6 +58,7 @@ export default function Card({ data }) {
             <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
           </svg>
         </a>
+</div>
       </div>
     </div>
   );
