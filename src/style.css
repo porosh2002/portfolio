@@ -23,3 +23,9 @@ body{
 .bg-YC{
     background: url(../Assets/YC.png);
 }
+.bg-SC{
+    background: url(../Assets/SC.png);
+}
+.bg-INF{
+    background: url(../Assets/INF.png);
+}

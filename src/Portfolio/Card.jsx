@@ -1,5 +1,5 @@
 export default function Card({ data }) {
-  const { Name, Delivery, Live, Image, SourceCode, Type, BG } = data;
+  const { Name, Live, Image, SourceCode,BG } = data;
   var LiveURL = true;
   var PublicCode = true;
   if (Live === null) {
@@ -33,7 +33,7 @@ export default function Card({ data }) {
             />
           </svg>
         </a>
-        <a target="self" href="#" className="mx-2">
+        <a target="self" href={Image} className="mx-2">
           <svg
             className="w-6 h-6"
             fill="currentColor"
