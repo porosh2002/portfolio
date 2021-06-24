@@ -9,7 +9,7 @@ export const Data = [
 ,{
     Name:'Youtube Clone',
     Live:null,
-    Image:'https://www.google.com',
+    Image:'https://www.dropbox.com/sh/zxaye9lmakscg71/AADXbDv2jFPVFdsPk80UNYFEa?dl=0',
     SourceCode:'https://github.com/porosh2002/Youtube-Clone',
     BG:"YC"
 }

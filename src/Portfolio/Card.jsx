@@ -1,5 +1,5 @@
 export default function Card({ data }) {
-  const { Name, Live, Image, SourceCode,BG } = data;
+  const { Name, Live, Image, SourceCode} = data;
   var LiveURL = true;
   var PublicCode = true;
   if (Live === null) {
@@ -11,13 +11,15 @@ export default function Card({ data }) {
   var DisableLiveURL = LiveURL ? null : "opacity-20 cursor-not-allowed";
   var DisableCode = PublicCode ? null : "opacity-20 cursor-not-allowed";
   return (
-    <div className="mx-4 my-4 h-72 w-72 inline-block card">
-      <div className={`h-60 bg-center bg-cover bg-${BG}`}>
-      </div>
-      <div className="text-gray-700 flex h-12 items-center justify-between bg-gradient-to-r from-blue-500 to-blue-400">
-<p className='mx-2 uppercase word-space-5 text-white'>{Name}</p>
-<div className='flex'>
-<a target="self" href={SourceCode} className={`${DisableCode} mx-2`}>
+    <div className="mx-4 my-4 h-52 w-72 inline-block card  group">
+    <div className='h-10 w-10 bg-white absolute ml-[248px] mt-44 rounded-tl-[100%] opacity-10'></div>
+    <div className='h-20 w-20 absolute bg-white rounded-br-[100%] opacity-10'></div>
+      <div className="text-gray-700 h-full flex items-center justify-center  bg-gradient-to-r from-blue-500 to-blue-400">
+<div>
+
+<p className=' uppercase word-space-5 text-white text-xl mb-4'>{Name}</p>
+<div className='flex justify-center mx-4'>
+<a target="self" href={SourceCode} className={`${DisableCode}  mx-4`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -33,7 +35,7 @@ export default function Card({ data }) {
             />
           </svg>
         </a>
-        <a target="self" href={Image} className="mx-2">
+        <a target="self" href={Image} className="">
           <svg
             className="w-6 h-6"
             fill="currentColor"
@@ -47,7 +49,7 @@ export default function Card({ data }) {
             />
           </svg>
         </a>
-        <a target="self" href={Live} className={`${DisableLiveURL} mx-2`}>
+        <a target="self" href={Live} className={`${DisableLiveURL} mx-4 `}>
           <svg
             className="w-6 h-6"
             fill="currentColor"
@@ -58,6 +60,7 @@ export default function Card({ data }) {
             <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
           </svg>
         </a>
+</div>
 </div>
       </div>
     </div>
