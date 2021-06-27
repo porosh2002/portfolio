@@ -11,10 +11,10 @@ export default function Card({ data }) {
   var DisableLiveURL = LiveURL ? null : "opacity-20 cursor-not-allowed";
   var DisableCode = PublicCode ? null : "opacity-20 cursor-not-allowed";
   return (
-    <div className="mx-4 my-4 h-52 w-72 inline-block card  group">
+    <div className=" mx-4 my-4 h-52 w-72 inline-block card bg-indigo-400  hover:bg-indigo-500">
     <div className='h-10 w-10 bg-white absolute ml-[248px] mt-44 rounded-tl-[100%] opacity-10'></div>
     <div className='h-20 w-20 absolute bg-white rounded-br-[100%] opacity-10'></div>
-      <div className="text-gray-700 h-full flex items-center justify-center  bg-gradient-to-r from-blue-500 to-blue-400">
+      <div className="text-gray-700 h-full flex items-center justify-center   ">
 <div>
 
 <p className=' uppercase word-space-5 text-white text-xl mb-4'>{Name}</p>
