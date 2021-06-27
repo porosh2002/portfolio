@@ -85,14 +85,38 @@ export const Data = [
 }
 ,{
     Name:'LINK OUTREACH',
-    Live:'https://www.google.com',
-    Image:'https://www.google.com',
-    SourceCode:'https://www.google.com',
+    Live:null,
+    Image:'https://www.dropbox.com/s/r2d2vgfkhy6fpsm/rhinorank.jpg?dl=0',
+    SourceCode:null,
 }
 ,{
     Name:'Infrastructure',
     Live:'https://bmmgroup.netlify.app/',
     Image:'https://www.dropbox.com/s/p1zskurk2l8w9tg/bmmgroup.jpg?dl=0',
     SourceCode:null,
+}
+,{
+    Name:'Text to Speech',
+    Live:'https://joketellertts.netlify.app/',
+    Image:'https://www.dropbox.com/s/g0cpshuhk2iel2p/joke%20teller.png?dl=0',
+    SourceCode:'https://github.com/porosh2002/Joke-Teller',
+}
+,{
+    Name:'Music player',
+    Live:'https://legendplayer.netlify.app/',
+    Image:'https://www.dropbox.com/s/r1hlxg1i8b5fn0d/music%20player.png?dl=0',
+    SourceCode:'https://github.com/porosh2002/Music-Player',
+}
+,{
+    Name:'paint',
+    Live:'https://wowcanvas.netlify.app/',
+    Image:'https://www.dropbox.com/s/yuxxw246i5fxi3v/paint.png?dl=0',
+    SourceCode:'https://github.com/porosh2002/Paint',
+}
+,{
+    Name:'Quote generator',
+    Live:'https://stressquote.netlify.app/',
+    Image:'https://www.dropbox.com/s/yuxxw246i5fxi3v/paint.png?dl=0',
+    SourceCode:'https://github.com/porosh2002/Quote-Generator',
 }
 ]
