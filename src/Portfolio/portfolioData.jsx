@@ -1,11 +1,18 @@
 export const Data = [
       
 {
+        Name:'Startup',
+        Live:'https://www.figma.com/proto/ReJadXCT84W7WZiDnKAbk6/Untitled?page-id=0%3A1&node-id=1%3A2&viewport=432%2C-96%2C0.2013142704963684&scaling=scale-down-width',
+        Image:'https://www.dropbox.com/s/d5ofu190myehuzx/SOLOTECH.png?dl=0',
+        SourceCode:null,
+},
+{
         Name:'marketing agency',
         Live:null,
         Image:'https://www.dropbox.com/s/kkfhzc4zde88z9m/gradient.png?dl=0',
         SourceCode:null,
-},{
+},
+{
         Name:'Landing Page',
         Live:null,
         Image:'https://www.dropbox.com/s/e7cwdsxi01psyur/Landing%20Page.png?dl=0',
