@@ -1,23 +1,16 @@
 module.exports = {
-  mode: 'jit',
-  purge: [
-    './src/**/*.html',
-    './src/**/*.js',
-    './src/**/*.ts',
-    './*.html',
-    './src/**/*.jsx'
-  ],
-  darkMode: false, // or 'media' or 'class'
+  mode:'jit',
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './index.html'],
+  darkMode: false,
   theme: {
     extend: {
-      colors: {
-          modalBG:'#343a40ed',
+      fontFamily:{
+        'montserrat':['Montserrat', 'sans-serif']
       }
     },
   },
   variants: {
-    extend: {
-    },
+    extend: {},
   },
   plugins: [],
 }
