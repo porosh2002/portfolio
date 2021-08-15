@@ -1,11 +1,13 @@
 import React, { Component, Suspense } from 'react'
 import { Switch, Route } from "react-router-dom";
 import HEADER from './COMPONENTS/HEADER/HEADER.jsx'
+import TOP_HEADER from './COMPONENTS/HEADER/TOP_HEADER.jsx';
 const Home = React.lazy(() => import("./PAGES/HOME"));
 export default class App extends Component {
   render() {
     return (
       <>
+      <TOP_HEADER />
       <HEADER/>
         <Suspense fallback={<p>Loading...</p>}>
           <Switch>
