@@ -23,7 +23,7 @@ export default function HEADER() {
     }
     const nav_style = nav_status ? ({ transform: "translateX(-100vw)" }) : null
     return (
-        <div className='sticky inset-0 text-purple-500 font-semibold px-8 tracking-wider lg:px-12 h-[100px] uppercase lg:flex items-center justify-between shadow-lg bg-white'>
+        <div className='sticky z-50 inset-0 text-purple-500 font-semibold px-8 tracking-wider lg:px-12 h-[100px] uppercase lg:flex items-center justify-between shadow-lg bg-white'>
 
             <div className='flex items-center h-full justify-between'>
                 <Link to='/' className='text-2xl'>Porosh</Link>
@@ -37,7 +37,7 @@ export default function HEADER() {
 
             </div>
 
-            <nav onClick={handle_nav_status} style={nav_style} className='duration-300 lg:duration-[0ms] flex-col lg:flex-row flex rounded-sm lg:items-center justify-between lg:w-[650px] text-[14px] bg-purple-500 lg:bg-transparent my-4 lg:my-0 text-white lg:text-purple-500'>
+            <nav onClick={handle_nav_status} style={nav_style} className='duration-300 lg:duration-[0ms] flex-col lg:flex-row flex rounded-sm lg:items-center justify-between lg:w-[620px] text-[14px] bg-purple-500 lg:bg-transparent my-4 lg:my-0 text-white lg:text-purple-500'>
                 <Link to='/' className='p-5 lg:p-0  '>Home</Link>
                 <Link to='/' className='p-5 lg:p-0  '>SERVICES</Link>
                 <Link to='/' className='p-5 lg:p-0  flex items-start'>
@@ -45,10 +45,7 @@ export default function HEADER() {
                     <div className='h-2 w-2 animate-ping rounded-full bg-red-600'></div>
                 </Link>
                 <Link to='/' className='p-5 lg:p-0  '>ABOUT</Link>
-                <Link to='/' className='p-5 lg:py-4 lg:px-5 rounded-sm flex items-center lg:bg-purple-500 lg:text-white lg:border-purple-500 hover:bg-transparent lg:hover:text-purple-500 duration-300 lg:border-2 border-transparent'>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1 rotate-90" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
-                    </svg>
+                <Link to='/' className='p-5 lg:py-4 lg:px-5 rounded-sm lg:bg-purple-500 lg:text-white lg:border-purple-500 hover:bg-transparent lg:hover:text-purple-500 duration-300 lg:border-2 border-transparent'>
                     CONTACT ME
                 </Link>
             </nav>
