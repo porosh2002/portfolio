@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 export default function HEADER() {
     const [nav_status, change_nav_status] = useState(true)
     useEffect(() => {
@@ -23,7 +23,7 @@ export default function HEADER() {
     }
     const nav_style = nav_status ? ({ transform: "translateX(-100vw)" }) : null
     return (
-        <div className='sticky z-50 inset-0 text-purple-500 font-semibold px-8 tracking-wider lg:px-12 h-[100px] uppercase lg:flex items-center justify-between shadow-lg bg-white'>
+        <div className='sticky z-50 inset-0 text-purple-500 font-semibold px-8 tracking-wider lg:px-12 h-[100px] uppercase lg:flex items-center justify-between bg-white'>
 
             <div className='flex items-center h-full justify-between'>
                 <Link to='/' className='text-2xl'>Porosh</Link>
@@ -38,16 +38,16 @@ export default function HEADER() {
             </div>
 
             <nav onClick={handle_nav_status} style={nav_style} className='duration-300 lg:duration-[0ms] flex-col lg:flex-row flex rounded-sm lg:items-center justify-between lg:w-[620px] text-[14px] bg-purple-500 lg:bg-transparent my-4 lg:my-0 text-white lg:text-purple-500'>
-                <Link to='/' className='p-5 lg:p-0  '>Home</Link>
-                <Link to='/' className='p-5 lg:p-0  '>SERVICES</Link>
-                <Link to='/' className='p-5 lg:p-0  flex items-start'>
+                <NavLink exact to='/' className='p-5 lg:p-0'>Home</NavLink>
+                <NavLink exact to='/services' className='p-5 lg:p-0'>SERVICES</NavLink>
+                <NavLink exact to='/works' className='p-5 lg:p-0  flex items-start'>
                     RECENT WORKS
                     <div className='h-2 w-2 animate-ping rounded-full bg-red-600'></div>
-                </Link>
-                <Link to='/' className='p-5 lg:p-0  '>ABOUT</Link>
-                <Link to='/' className='p-5 lg:py-4 lg:px-5 rounded-sm lg:bg-purple-500 lg:text-white lg:border-purple-500 hover:bg-transparent lg:hover:text-purple-500 duration-300 lg:border-2 border-transparent'>
+                </NavLink>
+                <NavLink exact to='/about' className='p-5 lg:p-0  '>ABOUT</NavLink>
+                <NavLink exact to='/contact' className='p-5 lg:py-4 lg:px-5 rounded-sm lg:bg-purple-500 lg:text-white lg:border-purple-500 hover:bg-transparent lg:hover:text-purple-500 duration-300 lg:border-2 border-transparent'>
                     CONTACT ME
-                </Link>
+                </NavLink>
             </nav>
 
         </div>
