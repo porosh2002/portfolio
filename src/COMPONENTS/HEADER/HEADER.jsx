@@ -45,7 +45,7 @@ export default function HEADER() {
                     <div className='h-2 w-2 animate-ping rounded-full bg-red-600'></div>
                 </NavLink>
                 <NavLink exact to='/about' className='p-5 lg:p-0  '>ABOUT</NavLink>
-                <NavLink exact to='/contact' className='p-5 lg:py-4 lg:px-5 rounded-sm lg:bg-purple-500 lg:text-white lg:border-purple-500 hover:bg-transparent lg:hover:text-purple-500 duration-300 lg:border-2 border-transparent'>
+                <NavLink activeClassName="selected" exact to='/contact' className='p-5 lg:py-4 lg:px-5 rounded-sm lg:bg-purple-500 lg:text-white lg:border-purple-500 hover:bg-transparent lg:hover:text-purple-500 duration-300 lg:border-2 border-transparent'>
                     CONTACT ME
                 </NavLink>
             </nav>

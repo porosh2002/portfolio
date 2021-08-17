@@ -3,7 +3,17 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 .active{
-  opacity:.7;
+  color: #29303b !important;
+  opacity:.5;
+}
+.selected{
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+@media screen and (max-width:1024px) {
+  .active{
+    color: #ffffff !important;
+    opacity:.5;
+  }
 }
 .swiper-container {
     width: 100%;
