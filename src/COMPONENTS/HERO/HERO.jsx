@@ -1,5 +1,5 @@
 
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,13 +13,16 @@ import "swiper/components/pagination/pagination.min.css"
 
 // import Swiper core and required modules
 import SwiperCore, {
-  Autoplay,Pagination
+  Autoplay,Pagination,EffectFade
 } from 'swiper/core';
 import ONE from "../SLIDER/ONE";
+import TWO from "../SLIDER/TWO"
+import THREE from "../SLIDER/THREE"
+import FOUR from "../SLIDER/FOUR"
 
 
 // install Swiper modules
-SwiperCore.use([Autoplay,Pagination]);
+SwiperCore.use([Autoplay,Pagination,EffectFade]);
 
 
 export default function HERO() {
@@ -28,7 +31,7 @@ export default function HERO() {
   
   return (
     <div className='h-[700px]'>
-    <Swiper direction={'vertical'} slidesPerView={1} spaceBetween={30} autoplay={true} pagination={{
+    <Swiper direction={'vertical'} effect='fade' slidesPerView={1} spaceBetween={30} autoplay={true} pagination={{
   "clickable": true
 }} className="mySwiper">
 
@@ -36,10 +39,16 @@ export default function HERO() {
 <ONE />
   </SwiperSlide>
 
-
-  {/* <SwiperSlide>Slide 2</SwiperSlide>
-  <SwiperSlide>Slide 3</SwiperSlide>
-  <SwiperSlide>Slide 4</SwiperSlide> */}
+  <SwiperSlide>
+<TWO />
+    
+  </SwiperSlide>
+  <SwiperSlide>
+    <THREE />
+  </SwiperSlide>
+  <SwiperSlide>
+    <FOUR/>
+  </SwiperSlide>
   </Swiper>
     </div>
   )
