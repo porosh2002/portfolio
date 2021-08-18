@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SERVICES() {
     return (
-        <div>
+        <div className='ring-offset-4 '>
             SERVICES PAGE
         </div>
     )

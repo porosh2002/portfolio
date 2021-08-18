@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom';
+import PRIMARY from '../BUTTON/PRIMARY';
 export default function HEADER() {
     const [nav_status, change_nav_status] = useState(true)
     useEffect(() => {
@@ -37,17 +38,15 @@ export default function HEADER() {
 
             </div>
 
-            <nav onClick={handle_nav_status} style={nav_style} className='duration-300 lg:duration-[0ms] flex-col lg:flex-row flex rounded-sm lg:items-center justify-between lg:w-[620px] text-[14px] bg-purple-500 lg:bg-transparent my-4 lg:my-0 text-white lg:text-purple-500'>
+            <nav onClick={handle_nav_status} style={nav_style} className='duration-300 lg:duration-[0ms] flex-col lg:flex-row flex rounded-sm lg:items-center justify-between lg:w-[650px] text-[14px] bg-purple-500 lg:bg-transparent my-4 lg:my-0 text-white lg:text-purple-500'>
                 <NavLink exact to='/' className='p-5 lg:p-0'>Home</NavLink>
                 <NavLink exact to='/services' className='p-5 lg:p-0'>SERVICES</NavLink>
+                <NavLink exact to='/about' className='p-5 lg:p-0  '>ABOUT</NavLink>
                 <NavLink exact to='/works' className='p-5 lg:p-0  flex items-start'>
                     RECENT WORKS
                     <div className='h-2 w-2 animate-ping rounded-full bg-red-600'></div>
                 </NavLink>
-                <NavLink exact to='/about' className='p-5 lg:p-0  '>ABOUT</NavLink>
-                <NavLink activeClassName="selected" exact to='/contact' className='p-5 lg:py-4 lg:px-5 rounded-sm lg:bg-purple-500 lg:text-white lg:border-purple-500 hover:bg-transparent lg:hover:text-purple-500 duration-300 lg:border-2 border-transparent'>
-                    CONTACT ME
-                </NavLink>
+                <PRIMARY value='CONTACT ME' activeClassName="selected" exact destination='/contact'/>
             </nav>
 
         </div>

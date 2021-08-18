@@ -1,5 +1,4 @@
 import React from 'react'
-// bg-gradient-to-r from-primary to-secondary
 export default function TOP_HEADER() {
     return (
         <div className='py-5 px-8 lg:px-12 text-white bg-purple-500 text-center'>
