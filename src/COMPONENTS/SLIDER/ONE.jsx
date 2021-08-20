@@ -11,7 +11,7 @@ export default function ONE() {
           <div className='mt-12 flex'>
     
           <PRIMARY value='GET A QUOTE' destination='/contact'/>
-          <SECONDARY value='RECENT WORKS' activeClassName="selected" exact destination='/contact' />
+          {/* <SECONDARY value='RECENT WORKS' activeClassName="selected" exact destination='/contact' /> */}
           </div>
         </div>
         <img src={ASTRONOT} alt='ASTRONOT' className='h-[450px]' />

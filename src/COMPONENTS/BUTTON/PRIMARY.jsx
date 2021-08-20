@@ -3,8 +3,11 @@ import { NavLink } from 'react-router-dom';
 export default function PRIMARY(props) {
     const {value,destination, ...others} = props
     return (
-        <NavLink to={destination} className='p-5 lg:py-4 lg:px-8 rounded-sm lg:bg-purple-500 lg:text-white lg:border-purple-500 hover:bg-transparent lg:hover:text-purple-500 duration-300 lg:border-2 border-transparent text-[14px] font-semibold tracking-wider' {...others}>
-        {value}
+        <NavLink to={destination} {...others}>
+        <p className="rounded-sm py-4 px-6 overflow-hidden group bg-purple-500 relative hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-400 text-white transition-all ease-out duration-300">
+    <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-500 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+    <span className="relative">{value}</span>
+</p>
     </NavLink>
     )
 }

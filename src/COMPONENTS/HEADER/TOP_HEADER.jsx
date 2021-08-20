@@ -1,13 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 export default function TOP_HEADER() {
     return (
-        <div className='py-5 px-8 lg:px-12 text-white bg-purple-500 text-center'>
-            <div className='h-12 w-12 bg-white rounded-full opacity-20 absolute invisible lg:visible'></div>
-            <div className='right-0 h-12 w-12 bg-white rounded-full opacity-30 absolute'></div>
-            <div className='left-0 w-5 h-5 bg-white rounded-full opacity-20 absolute'></div>
-            <div className='w-7 h-7 right-[30%] top-0 bg-white rounded-full opacity-10 absolute'></div>
-            <div className='w-12 h-12 right-[55%] top-10 bg-white rounded-full opacity-10 absolute invisible lg:visible'></div>
-            <p className='uppercase text-[13px] tracking-wider font-semibold'>our consulting service is now free !</p>  
+        <div className='h-[70px] md:px-12 font-semibold tracking-wider text-[13px] px-4 flex items-center justify-end text-gray-700'>
+            <Link to='/works/search' className='md:mr-12 mr-6'>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </Link>
+            <Link to='/services/free' className='md:mr-12 mr-6'>
+                ABOUT ME
+            </Link>
+            <Link to='/services/free'>
+                TRY OUR FREE SERVICES
+            </Link>
         </div>
     )
 }
