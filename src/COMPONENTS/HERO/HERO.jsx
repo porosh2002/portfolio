@@ -1,13 +1,25 @@
-import React from 'react'
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function HERO() {
+import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css"
+
+import ONE from '../SLIDER/ONE'
+
+import SwiperCore, {
+  Pagination
+} from 'swiper/core';
+
+SwiperCore.use([Pagination]);
+
+export default function App() {
   return (
-    <div className='h-[700px] bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700'>
-      <div className="min-w-screen min-h-screen flex justify-center items-center">
-    <div className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-500 text-5xl font-black">
-        Tailwind Rocks!
-    </div>
-</div>
+    <div className='tracking-wider font-semibold'>
+      <Swiper direction={'vertical'} pagination={{
+        "clickable": true
+      }} className="mySwiper">
+        <SwiperSlide><ONE /></SwiperSlide>
+      </Swiper>
     </div>
   )
 }
