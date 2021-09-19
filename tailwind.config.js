@@ -6,11 +6,7 @@ module.exports = {
     extend: {
       fontFamily:{
         'montserrat':['Montserrat', 'sans-serif']
-      },
-      gradientColorStops: theme => ({
-        'primary': '#FE6B8B',
-        'secondary': '#FF8E53',
-       })
+      }
     },
   },
   variants: {

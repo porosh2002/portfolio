@@ -1,6 +1,6 @@
 import React from 'react'
 import SECONDARY from '../COMPONENTS/BUTTON/SECONDARY'
-import ASTRONOT from '../IMAGES/ASTRONOT.svg'
+
 export default function NotFound() {
     return (
         <div className='h-[80vh] flex items-center justify-center'>

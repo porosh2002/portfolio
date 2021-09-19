@@ -4,7 +4,7 @@ import HERO from '../COMPONENTS/HERO/HERO'
 export default function Home() {
     return (
         <>
-<HERO />
+{/* <HERO /> */}
         </>
     )
 }

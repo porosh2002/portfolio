@@ -1,54 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-.active{
-  color: #29303b !important;
-  opacity:.5;
-}
-@media screen and (max-width:1024px) {
-  .active{
-    opacity:.5;
-  }
-}
-
-.selected{
-  color: rgba(255, 255, 255, 0.3) !important;
-}
-.selected:hover{
-  color: rgba(139, 92, 246, 1) !important;
-}
 
 
-/* SLIDER */
-.swiper-container {
-  width: 100%;
-  height: 100%;
+
+.global-padding {
+  @apply md:px-12 sm:px-8 px-4
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+.global-text{
+  @apply tracking-wider font-semibold
 }
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.demo{
+  color: #2a313c40;
 }
